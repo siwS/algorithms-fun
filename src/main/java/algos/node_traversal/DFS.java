@@ -6,16 +6,11 @@ import java.util.Stack;
  * Created by sofia on 01/03/17.
  */
 public class DFS {
-
-
     public static void traverse(Node treeNode) {
-
         Stack<Node> nodesToTraverse = new Stack<Node>();
         nodesToTraverse.push(treeNode);
 
-
         while (!nodesToTraverse.isEmpty()) {
-
             Node node = nodesToTraverse.pop();
             System.out.print(node.getNumber()+ " - ");
 
@@ -30,6 +25,5 @@ public class DFS {
 
             }
         }
-
     }
 }
