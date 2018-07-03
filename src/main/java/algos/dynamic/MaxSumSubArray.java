@@ -3,7 +3,8 @@ package algos.dynamic;
 import java.io.IOException;
 
 /**
- * Created by sofia on 15/03/17.
+ * The problem of given an array A, determining the max sum of a subarray of A.
+ * Or in other words the consecutive elements that give the biggest sum.
  */
 public class MaxSumSubArray {
 

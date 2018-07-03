@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * MediaCounter Class
+ * Takes a list that contains all the files of a system and returns how many of each type are there.
  * Created by sofia on 18/02/18.
  */
 public class MediaCounter {

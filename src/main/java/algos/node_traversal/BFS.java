@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
+ * BFS ago implementation using TreeNode structure
  * Created by sofia on 01/03/17.
  */
 public class BFS {

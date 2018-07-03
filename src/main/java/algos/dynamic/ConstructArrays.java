@@ -2,6 +2,11 @@ package algos.dynamic;
 
 import java.io.IOException;
 
+/**
+ * The problem of constructing an array of size n from elements 1..k
+ * so that first element is always 1, last element is x
+ * and two consecutive elements are not the same.
+ */
 public class ConstructArrays {
 
     static long countArrays(int n, int k, int x) {
@@ -36,7 +41,6 @@ public class ConstructArrays {
     }
 
     public static void main(String[] args) throws IOException {
-
         int n=15;
         int k=20;
         int x=3;

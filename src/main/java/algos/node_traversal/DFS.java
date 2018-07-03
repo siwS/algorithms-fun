@@ -3,6 +3,7 @@ package algos.node_traversal;
 import java.util.Stack;
 
 /**
+ * DFS ago implementation using TreeNode structure
  * Created by sofia on 01/03/17.
  */
 public class DFS {

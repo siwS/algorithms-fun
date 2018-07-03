@@ -1,19 +1,18 @@
 package algos.island_problem;
 
+/**
+ * Given a boolean 2D matrix, find the number of islands. A group of connected 1s forms an island. For example, the below matrix contains 5 islands
+ *
+ * Input : mat[][] = {{0, 1, 1, 0, 0},
+ *                    {0, 1, 0, 0, 1},
+ *                    {1, 0, 0, 1, 1},
+ *                    {0, 0, 0, 0, 0},
+ *                    {1, 0, 1, 0, 1},
+ * Output : 5
+ * Complexity is O(ROW * COLUMNS)
+ */
+
 public class FindIslands {
-
-
-    /**
-     * Given a boolean 2D matrix, find the number of islands. A group of connected 1s forms an island. For example, the below matrix contains 5 islands
-     *
-     * Input : mat[][] = {{0, 1, 1, 0, 0},
-     *                    {0, 1, 0, 0, 1},
-     *                    {1, 0, 0, 1, 1},
-     *                    {0, 0, 0, 0, 0},
-     *                    {1, 0, 1, 0, 1},
-     * Output : 5
-     * Complexity is O(ROW * COLUMNS)
-     */
 
     private static boolean within_boundaries(int x, int y, int lengthX, int lengthY) {
         return x >= 0 && x < lengthX && y >= 0 && y < lengthY;
