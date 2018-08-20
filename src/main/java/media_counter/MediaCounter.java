@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * MediaCounter Class
  * Takes a list that contains all the files of a system and returns how many of each type are there.
- * Created by sofia on 18/02/18.
+ * by @sofia
  */
 public class MediaCounter {
 
@@ -53,11 +53,10 @@ public class MediaCounter {
     }
 
     public String solution(String input){
+        String[] fileLines = input.split(System.getProperty("line.separator"));
+        List<File> files = new ArrayList<>();
 
-        List<String> fileLines = Arrays.asList(input.split(System.getProperty("line.separator")));
-        List<File> files = new ArrayList<File>();
-
-        Map<FileType, Integer> fileSizeMap = new HashMap<FileType, Integer>();
+        Map<FileType, Integer> fileSizeMap = new HashMap<>();
         fileSizeMap.put(FileType.IMAGE, 0);
         fileSizeMap.put(FileType.MUSIC, 0);
         fileSizeMap.put(FileType.MOVIE, 0);

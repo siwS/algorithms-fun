@@ -27,7 +27,7 @@ public class ConstructArrays {
     }
 
     static long recursive_count(int n, int k) {
-        long count = 0;
+        long count;
 
         if (n==1 && k==1) {
             return 1L;
@@ -40,7 +40,7 @@ public class ConstructArrays {
         return count;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         int n=15;
         int k=20;
         int x=3;
@@ -52,3 +52,4 @@ public class ConstructArrays {
 
     }
 }
+
