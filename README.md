@@ -13,7 +13,7 @@ My solutions for some common algorithm problems.
 
 1. Construct array from elements 1..k, with no consecutive same elements
 2. Sub array with maximum sum
-3. Calculate array A so that | A1 - A2 | + | A2 - A3 | + .... | An-1 - An | is max
+3. Calculate array A so that Sum { | Ai - Ai+1 | } is max
 
 ## Node Traversal
 
@@ -32,5 +32,5 @@ My solutions for some common algorithm problems.
 
 1. FizzBuzz
 2. Power of x in n
-3. Square root function
-4. Count media of each type from file
+3. Square root of x
+4. Count media reading from file
