@@ -10,20 +10,19 @@ public class MaxSumSubArray {
 
     public static int maxSubArray(int[] A) {
         int max = A[0];
-        int[] sum = new int[A.length];
+        int[] sum_so_far = new int[A.length];
 
-        sum[0] = A[0];
+        sum_so_far[0] = A[0];
 
         for (int i = 1; i < A.length; i++) {
-            // sum of previous element and me!
-            int prev_and_curr = sum[i - 1] + A[i];
+            // sum of previous sum so far and current element
+            int sum_with_current = sum_so_far[i - 1] + A[i];
 
-            // who is bigger? Is it me or do I need help from previous sum?
-            // I 'll call this my sum
-            sum[i] = Math.max(A[i], prev_and_curr);
+            // is adding new element to the previous sum greater than just taking the current element?
+            sum_so_far[i] = Math.max(A[i], sum_with_current);
 
-            // Did I even manage to beat current max? ;(
-            max = Math.max(max, sum[i]);
+            // is the new sum greater than the current max?
+            max = Math.max(max, sum_so_far[i]);
         }
 
         return max;
@@ -33,7 +32,7 @@ public class MaxSumSubArray {
     public static void main(String[] args) throws IOException {
         int[] B;
         //B = new int[]{10, 4, 8, 3, 10};
-        B = new int[]{10, -3, 4, -2, 1};
+        B = new int[]{-2, -3, 4, -1, -2, 1, 5, -3};
 
         int result = maxSubArray(B);
 
