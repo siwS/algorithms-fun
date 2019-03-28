@@ -28,6 +28,11 @@ My solutions for some common algorithm problems.
 3. Lexicographical Search
 4. Reverted Array Search
 
+## Data Structures
+
+1. Set
+2. Stack
+
 ## Simple problems
 
 1. FizzBuzz
