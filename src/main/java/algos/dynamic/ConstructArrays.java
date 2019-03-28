@@ -1,7 +1,5 @@
 package algos.dynamic;
 
-import java.io.IOException;
-
 /**
  * The problem of constructing an array of size n from elements 1..k
  * so that first element is always 1, last element is x
