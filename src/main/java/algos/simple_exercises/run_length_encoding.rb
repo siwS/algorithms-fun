@@ -1,7 +1,6 @@
 i = 0
 res = []
 
-
 while (i < chars.length)
   j = 0
   while j < chars.length && chars[i+j] == chars[i]
@@ -11,4 +10,5 @@ while (i < chars.length)
   res << j
   i = i+j
 end
-:
+
+puts res.join

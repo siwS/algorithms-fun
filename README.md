@@ -39,3 +39,5 @@ My solutions for some common algorithm problems.
 2. Power of x in n
 3. Square root of x
 4. Count media reading from file
+5. Run-length encoding
+
