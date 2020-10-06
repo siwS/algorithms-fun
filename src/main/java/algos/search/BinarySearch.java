@@ -37,9 +37,9 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] B = new int[]{4,5,6,7,0,1,2};
+        int[] B = new int[]{0,10,12,42,75,86,90};
 
-        int result = search(B, 0);
+        int result = search(B, 42);
         System.out.println(result);
     }
 }
