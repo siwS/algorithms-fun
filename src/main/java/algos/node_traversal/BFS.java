@@ -9,6 +9,8 @@ import java.util.Queue;
  */
 public class BFS {
     public static void traverse(Node treeNode) {
+        // A queue is a FIFO, therefore the elements are polled with the same order as they are added
+        // Here, the children are added as we are traversing and will be picked up with the order they are traversed
         Queue<Node> nodesToTraverse = new LinkedList<Node>();
         nodesToTraverse.add(treeNode);
 
